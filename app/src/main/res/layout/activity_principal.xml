@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.senai.fplocacoes.PrincipalActivity">
+
+    <TextView
+        android:id="@+id/textApresentacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="155dp"
+        android:fontFamily="cursive"
+        android:text="FP LOCAÇÕES"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnLocar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textApresentacao"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textApresentacao"
+        android:layout_marginBottom="118dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Locação"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCadastrar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnLocar"
+        android:layout_alignBottom="@+id/btnLocar"
+        android:layout_alignLeft="@+id/textApresentacao"
+        android:layout_alignStart="@+id/textApresentacao"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Cadastrar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnLocar"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

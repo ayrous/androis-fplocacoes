@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.senai.fplocacoes.CadastroActivity"
+    tools:showIn="@layout/app_bar_cadastro">
+
+    <TextView
+        android:id="@+id/textCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:textSize="36sp"
+        tools:text="Cadastro de Veículos" />
+
+    <ImageView
+        android:id="@+id/imgBusVan"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/editNome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        app:srcCompat="@drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/btnSelecionarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgBusVan"
+        android:layout_toEndOf="@+id/btnCadastro"
+        android:layout_toRightOf="@+id/btnCadastro"
+        app:srcCompat="@android:drawable/stat_notify_more" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editDescricao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/editDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioOnibus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Descrição do Veículo"
+        android:inputType="textMultiLine"
+        android:textSize="24sp" />
+
+    <RadioButton
+        android:id="@+id/radioOnibus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioVan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:fontFamily="cursive"
+        android:text="Ônibus"
+        android:textSize="24sp" />
+
+    <RadioButton
+        android:id="@+id/radioVan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCadastro"
+        android:layout_alignLeft="@+id/radioOnibus"
+        android:layout_alignStart="@+id/radioOnibus"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="cursive"
+        android:text="Van"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioVan"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/radioVan"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Cadastrar"
+        android:textSize="14sp" />
+
+</RelativeLayout>
